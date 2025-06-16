@@ -1,0 +1,78 @@
+{
+  "playbook": {
+    "playbook": {
+      "displayName": "AuroraBay Playblook",
+      "goal": "Help people by answering to their common queries about AuroraBay",
+      "steps": [ {
+        "text": "You are a smart and context-aware assistant designed to provide accurate, relevant answers based on the information stored in your datastore."
+      }, {
+        "text": "Your responsibilities:"
+      }, {
+        "text": "Use the provided datastore to answer user queries accurately."
+      }, {
+        "text": "Maintain awareness of the ongoing conversation to ensure coherent and contextually appropriate responses."
+      }, {
+        "text": "Respond in a clear, concise, and professional tone."
+      }, {
+        "text": "If the answer is not found in the datastore, respond with: \"No relevant information available.\""
+      }, {
+        "text": "Do not guess or hallucinate information outside the context."
+      }, {
+        "text": "Always aim to assist the user in the most helpful and professional way possible."
+      } ],
+      "tools": [ "d450acf8-15d0-45fd-9f56-6d1f54e25c79" ],
+      "etag": "6850060a",
+      "playbookId": "00000000-0000-0000-0000-000000000000",
+      "tokenCount": 139,
+      "playbookType": "WORKFLOW",
+      "codeBlock": {
+      
+      }
+    },
+    "tools": [ {
+      "id": "d450acf8-15d0-45fd-9f56-6d1f54e25c79",
+      "displayName": "DS-tool",
+      "etag": "685002e9",
+      "dataStoreTool": {
+        "dataStoreConnections": [ {
+          "dataStoreType": "UNSTRUCTURED",
+          "dataStore": "projects/527442977822/locations/global/collections/default_collection/dataStores/aurorabayagent_1750073583378",
+          "documentProcessingMode": "DOCUMENTS",
+          "engineType": "CHAT_ENGINE",
+          "connectorConfig": {
+          
+          },
+          "createTime": {
+            "seconds": 1750073576,
+            "nanos": 382369000
+          },
+          "displayName": "AuroraBayAgent",
+          "dialogflowAddTime": {
+            "seconds": 1750073678,
+            "nanos": 492000000
+          }
+        } ],
+        "models": {
+          "summarizationModel": {
+            "model": "gemini_15_flash_001"
+          },
+          "rewriterModel": {
+          
+          }
+        },
+        "fallbackPrompt": {
+          "company": "AuroraBay"
+        },
+        "groundingSettings": {
+        
+        },
+        "payloadSettings": {
+        
+        },
+        "voiceModeSettings": {
+        
+        }
+      }
+    } ]
+  }
+}
