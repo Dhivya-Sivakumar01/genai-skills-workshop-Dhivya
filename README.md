@@ -1,1 +1,1 @@
-# genai-skills-workshop-Dhivya
+GenAI Assessment bootcamp
