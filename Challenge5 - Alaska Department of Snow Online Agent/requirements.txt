@@ -1,0 +1,9 @@
+streamlit
+python-dotenv
+google-cloud-aiplatform
+pandas
+pytest
+google-cloud-bigquery
+google-cloud-aiplatform[evaluation]
+pyarrow
+db-dtypes

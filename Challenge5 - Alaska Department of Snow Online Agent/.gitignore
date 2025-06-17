@@ -1,0 +1,5 @@
+.pytest*/
+__pycache__
+venv/
+.env
+key_gcloud.json
